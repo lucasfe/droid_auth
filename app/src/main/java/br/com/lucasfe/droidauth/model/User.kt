@@ -1,5 +1,6 @@
 package br.com.lucasfe.droidauth.model
 
+import br.com.lucasfe.droidauth.webapi.RetrofitInit
 import java.util.Observable;
 
 class User : Observable() {
@@ -27,4 +28,10 @@ class User : Observable() {
         notifyObservers(field)
     }
 
+
+    fun authenticate() {
+        RetrofitInit().webapi().authenticate().subscribe()
+    }
+
 }
+
