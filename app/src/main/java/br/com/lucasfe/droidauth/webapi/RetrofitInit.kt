@@ -5,8 +5,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitInit {
 
-    private val retrofit = Retrofit.Builder()
-            .baseUrl("")
+
+    val retrofit = Retrofit.Builder()
+            .baseUrl("http://api-vanhack-event-sp.azurewebsites.net")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

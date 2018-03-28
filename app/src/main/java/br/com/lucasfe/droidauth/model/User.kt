@@ -29,9 +29,5 @@ class User : Observable() {
     }
 
 
-    fun authenticate() {
-        RetrofitInit().webapi().authenticate().subscribe()
-    }
-
 }
 
